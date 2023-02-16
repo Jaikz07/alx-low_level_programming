@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main - A program that prints various characters and assigns varriables and also the size of various computer size
- * Return: 0 (Success)
+ * main - A program that prints the size of various computer size
+ * Return 0 (Success)
  */
 int main(void)
 {
