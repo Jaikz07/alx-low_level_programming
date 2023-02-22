@@ -5,22 +5,22 @@
  */
 int main(void)
 {
-int i, n = 50; 
-int t1 = 1, t2 = 2, j;
-printf("%d, %d, ", t1, t2);
-for (i = 3; i <= n; i++)
+int i = 0;
+long j = 1, k = 2;
+while (i < 50)
 {
-	j = t1 + t2;
-	t1 = t2;
-	t2 = j;
-	if (i != n)
-	{
-		printf("%d, ", j);
-	}
-	else
-	{
-		printf("%d\n", j);
-	}
+if (i == 0)
+printf(", %ld", j);
+else if (i == 1)
+printf(", %ld", k);
+else
+{
+k += j;
+j = k - j;
+printf(", %ld", k);
 }
+++i;
+}
+printf("\n");
 return (0);
 }
