@@ -6,8 +6,8 @@
 int main(void)
 {
 int i, n = 50; 
-unsigned long long t1 = 1, t2 = 2, j;
-printf("%llu, %llu, ", t1, t2);
+int t1 = 1, t2 = 2, j;
+printf("%d, %d, ", t1, t2);
 for (i = 3; i <= n; i++)
 {
 	j = t1 + t2;
@@ -15,11 +15,11 @@ for (i = 3; i <= n; i++)
 	t2 = j;
 	if (i != n)
 	{
-		printf("%llu, ", j);
+		printf("%d, ", j);
 	}
 	else
 	{
-		printf("%llu\n", j);
+		printf("%d\n", j);
 	}
 }
 return (0);
