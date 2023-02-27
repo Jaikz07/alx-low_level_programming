@@ -1,5 +1,6 @@
 #include "main.h"
 /**
+ * puts2 - a function that prints every other character of a string.
  * puts - function should print only one character out of two.
  * @str: input
  * Return: print
